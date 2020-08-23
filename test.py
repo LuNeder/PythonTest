@@ -16,25 +16,18 @@ def fazaquilola():
 	print(la)
 
 
-
 def menu():
-
 	print('issoai 1\naquilola 2\nselecione:')
-
 	choice = input('')
-
 	print('oi' + choice + 'oii')
 
 	if choice == '1':
 		fazissoai()
-
 	elif choice == '2':
 		fazaquilola()
-
 	else:
 		print('o seu nescio, voce nao selecionou algo valido')
 		menu()
-
 
 
 menu()
