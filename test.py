@@ -7,24 +7,34 @@ print(lululu)
 print(uuu)
 print('uiiii')
 
-def menu():
-    print('issoai 1\naquilola 2\nselecione:')
-    choice = input('')
-    print('oi' + choice + 'oii')
-    if choice == '1':
-        fazissoai()
-    if choice == '2':
-        fazaquilola()
-    else:
-        print('o seu nescio, voce nao selecionou algo valido')
-        menu()
-
 def fazissoai():
-    li = os.popen('echo aiaiai')
-    print(li)
+	li = os.system('echo aiaiai')
+	print(li)
 
 def fazaquilola():
-    la = os.popen('echo nao aquilo nao')
-    print(la)
+	la = os.system('echo nao aquilo nao')
+	print(la)
+
+
+
+def menu():
+
+	print('issoai 1\naquilola 2\nselecione:')
+
+	choice = input('')
+
+	print('oi' + choice + 'oii')
+
+	if choice == '1':
+		fazissoai()
+
+	elif choice == '2':
+		fazaquilola()
+
+	else:
+		print('o seu nescio, voce nao selecionou algo valido')
+		menu()
+
+
 
 menu()
